@@ -1,4 +1,8 @@
-const quotes =[{
+
+
+qtv.addEventListener("click", function(){
+
+    const quotes =[{
     quote:    "To live is the rarest thing in the world. Most people exist, that is all.",
     writer:    'Oscar Wilde'
 
@@ -64,11 +68,11 @@ const quotes =[{
 },
 ]
 
-let qtv= document.querySelector("#qtv");
-let quote= document.querySelector("#quote");
-let writer= document.querySelector(".writer");
+    
+    let qtv= document.querySelector("#qtv");
+    let quote= document.querySelector("#quote");
+    let writer= document.querySelector(".writer");
 
-qtv.addEventListener("click", function(){
     let random = Math.floor(Math.random() * quotes.length);
 
     quote.innerHTML= quotes[random].quote;
